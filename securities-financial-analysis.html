@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securities & Financial Analysis - Formidable Partners</title>
+    <link rel="icon" type="image/jpeg" href="formidable logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="formidable logo.jpg" alt="Formidable Partners Logo">
+                    <div class="logo-text">
+                        <h1>Formidable Partners</h1>
+                        <p>Economic, Medical & Fire Litigation Consulting</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#expertise" class="nav-link">Areas of Expertise</a></li>
+                    <li><a href="index.html#team" class="nav-link">Our Team</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <a href="index.html#expertise">Areas of Expertise</a>
+                <span>›</span>
+                <span style="color: white;">Securities & Financial Analysis</span>
+            </div>
+            <h1>Securities & Financial Analysis</h1>
+            <p class="expertise-intro">
+                Formidable Partners provides sophisticated empirical analyses and expert testimony in securities litigation, financial modeling, and regulatory compliance matters. Our team of economists and financial experts brings deep academic rigor and practical experience to complex financial cases.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Securities Litigation Support</h2>
+                <p>Our securities and financial analysis team combines academic excellence with real-world expertise to provide clear, defensible analyses in high-stakes litigation</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Market Manipulation Analysis</h3>
+                    <p>We employ sophisticated econometric techniques to identify and quantify market manipulation, including pump-and-dump schemes, spoofing, and other forms of market abuse. Our analyses have been used in both civil litigation and regulatory enforcement actions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Securities Class Actions</h3>
+                    <p>Our experts provide comprehensive support in securities class action litigation, including event studies, damages calculations, and loss causation analysis. We have experience with cases involving alleged violations of Section 10(b) and Rule 10b-5.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Financial Disclosure Analysis</h3>
+                    <p>We analyze the adequacy and accuracy of financial disclosures, including assessments of materiality, evaluation of accounting treatments, and quantification of the impact of alleged misstatements or omissions on stock prices.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Insider Trading Investigations</h3>
+                    <p>Our team conducts detailed analyses of trading patterns, information flows, and market movements to support or defend against insider trading allegations. We use advanced statistical methods to identify suspicious trading activity.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Valuation Disputes</h3>
+                    <p>We provide independent valuation analyses for disputes involving mergers and acquisitions, appraisal rights, fairness opinions, and solvency determinations. Our valuations are grounded in financial theory and market evidence.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Regulatory Compliance</h3>
+                    <p>Our experts assist with regulatory compliance matters, including assessments of trading practices, best execution analysis, and evaluations of compliance with SEC, FINRA, and other regulatory requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Analytical Approach</h2>
+                <p>We follow a rigorous, systematic approach to ensure our analyses meet the highest standards of academic and legal scrutiny</p>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Data Collection</h3>
+                    <p>Comprehensive gathering of market data, trading records, corporate documents, and other relevant information</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Statistical Analysis</h3>
+                    <p>Application of sophisticated econometric and statistical methods tailored to the specific issues in each case</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Economic Modeling</h3>
+                    <p>Development of robust economic models that account for market conditions, firm-specific factors, and regulatory environment</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Damages Quantification</h3>
+                    <p>Precise calculation of economic damages using accepted methodologies and sensitivity analyses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Types of Cases We Handle</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Securities fraud and market manipulation</li>
+                    <li><i class="fas fa-check"></i>Shareholder derivative actions</li>
+                    <li><i class="fas fa-check"></i>M&A litigation and appraisal proceedings</li>
+                    <li><i class="fas fa-check"></i>Breach of fiduciary duty claims</li>
+                    <li><i class="fas fa-check"></i>Investment advisor and broker-dealer disputes</li>
+                    <li><i class="fas fa-check"></i>Hedge fund and private equity litigation</li>
+                    <li><i class="fas fa-check"></i>Options backdating investigations</li>
+                    <li><i class="fas fa-check"></i>ERISA litigation</li>
+                    <li><i class="fas fa-check"></i>Ponzi scheme and financial fraud cases</li>
+                    <li><i class="fas fa-check"></i>Cryptocurrency and digital asset disputes</li>
+                    <li><i class="fas fa-check"></i>Municipal bond litigation</li>
+                    <li><i class="fas fa-check"></i>Regulatory enforcement actions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Need Securities & Financial Analysis Expertise?</h2>
+            <p>Our team is ready to provide the sophisticated analysis and expert testimony your case requires</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="index.html#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Formidable Partners</h3>
+                    <p>Leading provider of economic and medical litigation consulting services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#top">Securities Analysis</a></li>
+                        <li><a href="bankruptcy-restructuring.html">Bankruptcy Consulting</a></li>
+                        <li><a href="epidemiology-cancer-research.html">Medical Expert Services</a></li>
+                        <li><a href="wage-hour-litigation.html">Employment Litigation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                    <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

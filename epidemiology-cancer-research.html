@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epidemiology & Cancer Research - Formidable Partners</title>
+    <link rel="icon" type="image/jpeg" href="formidable logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="formidable logo.jpg" alt="Formidable Partners Logo">
+                    <div class="logo-text">
+                        <h1>Formidable Partners</h1>
+                        <p>Economic, Medical & Fire Litigation Consulting</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#expertise" class="nav-link">Areas of Expertise</a></li>
+                    <li><a href="index.html#team" class="nav-link">Our Team</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <a href="index.html#expertise">Areas of Expertise</a>
+                <span>›</span>
+                <span style="color: white;">Epidemiology & Cancer Research</span>
+            </div>
+            <h1>Epidemiology & Cancer Research</h1>
+            <p class="expertise-intro">
+                Our medical experts provide critical insights into complex health-related matters, focusing on causality and risk assessment in diseases including ovarian cancer, lung cancer, and mesothelioma. We bring together leading epidemiologists and cancer researchers to deliver scientifically rigorous analyses for litigation support.
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expert Medical Analysis for Complex Litigation</h2>
+                <p>Our epidemiology and cancer research team provides evidence-based assessments of disease causation, exposure risks, and medical outcomes</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Cancer Causality Analysis</h3>
+                    <p>Comprehensive evaluation of potential causal relationships between exposures and cancer development. We analyze epidemiological data, individual exposure histories, and scientific literature to assess causation in cases involving various cancer types.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Exposure Risk Assessment</h3>
+                    <p>Detailed analysis of exposure pathways, dose-response relationships, and risk factors. Our experts quantify exposure levels and evaluate their potential health impacts using established epidemiological methods and models.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Epidemiological Studies</h3>
+                    <p>Design and evaluation of epidemiological studies to investigate disease patterns, risk factors, and causal associations. We provide critical review of existing studies and develop new research when needed for litigation support.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Medical Literature Review</h3>
+                    <p>Systematic review and synthesis of relevant medical and scientific literature. We evaluate the strength of evidence, identify knowledge gaps, and provide comprehensive summaries of current scientific understanding.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Occupational Disease Assessment</h3>
+                    <p>Expert analysis of work-related disease claims, including asbestos-related diseases, occupational cancers, and chemical exposures. We evaluate workplace exposure histories and their relationship to disease development.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Product Liability Health Assessment</h3>
+                    <p>Evaluation of health claims related to consumer products, pharmaceuticals, and medical devices. We assess the scientific evidence for alleged health effects and provide objective analysis of causation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Scientific Methodology</h2>
+                <p>We apply rigorous epidemiological principles and evidence-based medicine to provide objective, scientifically sound assessments</p>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Case Review</h3>
+                    <p>Comprehensive review of medical records, exposure histories, and relevant case documentation</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Literature Analysis</h3>
+                    <p>Systematic review of peer-reviewed scientific literature and epidemiological studies relevant to the case</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Risk Assessment</h3>
+                    <p>Application of epidemiological methods to assess disease risk and evaluate causal relationships</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Expert Opinion</h3>
+                    <p>Development of scientifically grounded expert opinions supported by current medical knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Disease Areas and Case Types</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Ovarian cancer and talc exposure</li>
+                    <li><i class="fas fa-check"></i>Lung cancer and smoking/asbestos</li>
+                    <li><i class="fas fa-check"></i>Mesothelioma causation</li>
+                    <li><i class="fas fa-check"></i>Benzene and leukemia</li>
+                    <li><i class="fas fa-check"></i>Environmental cancer clusters</li>
+                    <li><i class="fas fa-check"></i>Pharmaceutical adverse events</li>
+                    <li><i class="fas fa-check"></i>Medical device complications</li>
+                    <li><i class="fas fa-check"></i>Toxic tort litigation</li>
+                    <li><i class="fas fa-check"></i>Occupational disease claims</li>
+                    <li><i class="fas fa-check"></i>Chemical exposure assessments</li>
+                    <li><i class="fas fa-check"></i>Radiation exposure cases</li>
+                    <li><i class="fas fa-check"></i>Infectious disease outbreaks</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Need Epidemiology & Cancer Research Expertise?</h2>
+            <p>Our medical experts are ready to provide scientifically rigorous analysis and testimony for your case</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="index.html#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Formidable Partners</h3>
+                    <p>Leading provider of economic and medical litigation consulting services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="securities-financial-analysis.html">Securities Analysis</a></li>
+                        <li><a href="bankruptcy-restructuring.html">Bankruptcy Consulting</a></li>
+                        <li><a href="#top">Medical Expert Services</a></li>
+                        <li><a href="wage-hour-litigation.html">Employment Litigation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                    <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

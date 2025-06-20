@@ -17,12 +17,12 @@ A professional website for Formidable Partners, a large-scale economic and medic
 - Smooth scrolling between sections
 
 ### 🏢 Areas of Expertise
-- **Securities & Financial Analysis** - Expert analysis in securities litigation and financial modeling
+- **Economic & Financial Analyses** - Expert analysis in securities litigation and financial modeling
 - **Bankruptcy & Restructuring** - Critical analyses in bankruptcy proceedings and asset valuation
 - **Epidemiology & Cancer Research** - Medical expertise in health-related causality and risk assessment
 - **Fire, Chemical & Combustion Analysis** - Specialist analysis of fire incidents and chemical processes
 - **Wage & Hour Litigation** - Employment data analysis and legal compliance
-- **Technology & Media Impact** - Digital media impact assessment and technology disruption analysis
+- **Defamation & Media Impact** - Digital media impact assessment and technology disruption analysis
 
 ### 👥 Team Showcase
 - Anonymized expert profiles with credentials

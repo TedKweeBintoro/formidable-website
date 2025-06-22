@@ -72,9 +72,14 @@
         }
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
         }
         .service-item {
             background: white;
@@ -135,8 +140,13 @@
         }
         .case-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .case-list {
+                grid-template-columns: 1fr;
+            }
         }
         .case-list li {
             display: flex;
@@ -240,7 +250,7 @@
             </div>
             <h1>Economic & Financial Analyses</h1>
             <p class="expertise-intro">
-                Formidable Partners provides sophisticated empirical analyses and expert testimony in securities litigation, financial modeling, and regulatory compliance matters. Our team of economists and financial experts brings deep academic rigor and practical experience to complex financial cases.
+                Expert analyses in economic litigation and financial modeling. Our team provides sophisticated empirical analyses for complex financial cases involving allegations of damages.
             </p>
         </div>
     </section>
@@ -253,10 +263,6 @@
                 <p>Our securities and financial analysis team combines academic excellence with real-world expertise to provide clear, defensible analyses in high-stakes litigation</p>
             </div>
             <div class="services-grid">
-                <div class="service-item">
-                    <h3>Market Manipulation Analysis</h3>
-                    <p>We employ sophisticated econometric techniques to identify and quantify market manipulation, including pump-and-dump schemes, spoofing, and other forms of market abuse. Our analyses have been used in both civil litigation and regulatory enforcement actions.</p>
-                </div>
                 <div class="service-item">
                     <h3>Securities Class Actions</h3>
                     <p>Our experts provide comprehensive support in securities class action litigation, including event studies, damages calculations, and loss causation analysis. We have experience with cases involving alleged violations of Section 10(b) and Rule 10b-5.</p>
@@ -272,10 +278,6 @@
                 <div class="service-item">
                     <h3>Valuation Disputes</h3>
                     <p>We provide independent valuation analyses for disputes involving mergers and acquisitions, appraisal rights, fairness opinions, and solvency determinations. Our valuations are grounded in financial theory and market evidence.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Regulatory Compliance</h3>
-                    <p>Our experts assist with regulatory compliance matters, including assessments of trading practices, best execution analysis, and evaluations of compliance with SEC, FINRA, and other regulatory requirements.</p>
                 </div>
             </div>
         </div>
@@ -326,8 +328,7 @@
                     <li><i class="fas fa-check"></i>Investment advisor and broker-dealer disputes</li>
                     <li><i class="fas fa-check"></i>Hedge fund and private equity litigation</li>
                     <li><i class="fas fa-check"></i>Options backdating investigations</li>
-                    <li><i class="fas fa-check"></i>ERISA litigation</li>
-                    <li><i class="fas fa-check"></i>Ponzi scheme and financial fraud cases</li>
+                    <li><i class="fas fa-check"></i>Financial fraud cases</li>
                     <li><i class="fas fa-check"></i>Cryptocurrency and digital asset disputes</li>
                     <li><i class="fas fa-check"></i>Municipal bond litigation</li>
                     <li><i class="fas fa-check"></i>Regulatory enforcement actions</li>

@@ -72,9 +72,14 @@
         }
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
         }
         .service-item {
             background: white;
@@ -258,20 +263,12 @@
                     <p>Comprehensive examination of payroll records, time sheets, and compensation data. We identify patterns of underpayment, overtime violations, and off-the-clock work using advanced data analytics and statistical methods.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Labor Law Compliance</h3>
-                    <p>Detailed assessment of compliance with federal, state, and local labor laws including FLSA, state wage and hour laws, and industry-specific regulations. We evaluate policies, practices, and their implementation.</p>
-                </div>
-                <div class="service-item">
                     <h3>Overtime Calculation Disputes</h3>
                     <p>Expert analysis of overtime calculations, regular rate determinations, and compensable time. We examine work schedules, bonus structures, and compensation methods to identify and quantify violations.</p>
                 </div>
                 <div class="service-item">
                     <h3>Employment Classification Issues</h3>
                     <p>Assessment of employee versus independent contractor classifications, exempt versus non-exempt determinations, and joint employer relationships. We apply economic reality tests and legal standards to classification disputes.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Class Action Support</h3>
-                    <p>Statistical analysis for class certification, damages calculations for class-wide relief, and assessment of commonality and typicality. We provide robust analyses that withstand Daubert challenges.</p>
                 </div>
                 <div class="service-item">
                     <h3>Damages Quantification</h3>

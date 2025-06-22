@@ -72,9 +72,38 @@
         }
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(6, 1fr);
             gap: 30px;
             margin-top: 40px;
+        }
+        .service-item:nth-child(1),
+        .service-item:nth-child(2),
+        .service-item:nth-child(3) {
+            grid-column: span 2;
+        }
+        .service-item:nth-child(4),
+        .service-item:nth-child(5) {
+            grid-column: span 3;
+        }
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-item:nth-child(1),
+            .service-item:nth-child(2),
+            .service-item:nth-child(3),
+            .service-item:nth-child(4),
+            .service-item:nth-child(5) {
+                grid-column: span 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-item {
+                grid-column: span 1;
+            }
         }
         .service-item {
             background: white;
@@ -256,10 +285,6 @@
                 <div class="service-item">
                     <h3>Medical Imaging Analysis</h3>
                     <p>Expert interpretation of all imaging modalities including X-ray, CT, MRI, ultrasound, and nuclear medicine studies. We provide detailed analysis of imaging findings and their clinical significance in litigation contexts.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Radiation Exposure Assessment</h3>
-                    <p>Comprehensive evaluation of radiation exposure incidents, including medical radiation overdose, occupational exposure, and environmental radiation cases. We assess dose calculations, biological effects, and long-term health risks.</p>
                 </div>
                 <div class="service-item">
                     <h3>Diagnostic Accuracy Review</h3>

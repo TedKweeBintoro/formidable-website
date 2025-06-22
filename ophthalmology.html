@@ -72,9 +72,38 @@
         }
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(6, 1fr);
             gap: 30px;
             margin-top: 40px;
+        }
+        .service-item:nth-child(1),
+        .service-item:nth-child(2),
+        .service-item:nth-child(3) {
+            grid-column: span 2;
+        }
+        .service-item:nth-child(4),
+        .service-item:nth-child(5) {
+            grid-column: span 3;
+        }
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-item:nth-child(1),
+            .service-item:nth-child(2),
+            .service-item:nth-child(3),
+            .service-item:nth-child(4),
+            .service-item:nth-child(5) {
+                grid-column: span 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-item {
+                grid-column: span 1;
+            }
         }
         .service-item {
             background: white;
@@ -272,10 +301,6 @@
                 <div class="service-item">
                     <h3>Medical Malpractice Review</h3>
                     <p>Assessment of standard of care in ophthalmologic treatment, including surgical complications, misdiagnosis, and delayed treatment. We evaluate whether care met accepted medical standards.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Occupational Vision Assessment</h3>
-                    <p>Evaluation of work-related eye conditions, including computer vision syndrome, occupational eye injuries, and vision requirements for specific job functions. We assess disability and accommodation needs.</p>
                 </div>
             </div>
         </div>

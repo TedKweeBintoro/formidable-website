@@ -18,6 +18,12 @@ body {
     padding: 0 20px;
 }
 
+/* CSS Custom Properties */
+:root {
+    --header-height: 82px; /* logo 50px + padding 32px */
+    --header-height-mobile: 72px; /* smaller on mobile */
+}
+
 /* Header Styles */
 .header {
     background: #fff;
@@ -100,12 +106,13 @@ body {
     background-position: center center;
     background-attachment: scroll;
     color: white;
-    min-height: 100vh;
-    min-height: 100dvh;
+    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
+    margin-top: var(--header-height);
     display: flex;
     align-items: center;
     text-align: center;
-    padding: clamp(80px, 10vh, 120px) clamp(1rem, 4vw, 2rem);
+    padding: clamp(2rem, 5vh, 3rem) clamp(1rem, 4vw, 2rem);
 }
 
 .hero-content h1 {
@@ -564,6 +571,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --header-height: 72px; /* smaller header on mobile */
+    }
+    
     .hamburger {
         display: flex;
     }
@@ -589,8 +600,8 @@ body {
     }
     
     .hero {
-        height: 100vh;
-        height: 100dvh; /* Dynamic viewport height for mobile */
+        height: calc(100vh - var(--header-height));
+        height: calc(100dvh - var(--header-height));
     }
     
     .hero-content {
@@ -635,10 +646,10 @@ body {
     }
     
     .hero {
-        padding: 10vh 0 5vh; /* Better use of viewport height */
+        padding: clamp(1.5rem, 4vh, 2.5rem) clamp(0.75rem, 3vw, 1.5rem);
         background-attachment: scroll; /* Disable fixed background on mobile for better performance */
-        min-height: 100vh;
-        min-height: 100dvh;
+        height: calc(100vh - var(--header-height));
+        height: calc(100dvh - var(--header-height));
     }
     
     .hero-content h1 {
@@ -720,11 +731,11 @@ html {
 
 /* Add padding to sections to account for fixed header */
 section {
-    scroll-margin-top: 80px; /* Offset anchor links by navbar height */
+    scroll-margin-top: var(--header-height); /* Offset anchor links by navbar height */
 }
 
 #expertise,
 #team,
 #contact {
-    padding-top: 100px; /* Extra padding for sections to account for fixed header */
+    padding-top: calc(var(--header-height) + 20px); /* Extra padding for sections to account for fixed header */
 } 

@@ -798,7 +798,6 @@ section {
     scroll-margin-top: var(--header-height); /* Offset anchor links by navbar height */
 }
 
-#expertise,
 #team,
 #contact {
     padding-top: calc(var(--header-height) + 20px); /* Extra padding for sections to account for fixed header */

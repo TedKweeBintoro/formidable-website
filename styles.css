@@ -774,6 +774,25 @@ html {
 .expertise-card:nth-child(5) { animation-delay: 0.5s; }
 .expertise-card:nth-child(6) { animation-delay: 0.6s; }
 
+/* Contact Button Styles */
+.contact-us-btn {
+    background: #ffd700;
+    color: #1e3a8a;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+}
+
+.contact-us-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
 /* Add padding to sections to account for fixed header */
 section {
     scroll-margin-top: var(--header-height); /* Offset anchor links by navbar height */

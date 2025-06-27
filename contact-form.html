@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Formidable Partners</title>
+    <link rel="icon" type="image/jpeg" href="formidable logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px;
+            color: white;
+            text-align: center;
+        }
+        .contact-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .contact-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        .contact-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a365d;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2b6cb0;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .required {
+            color: #e53e3e;
+        }
+        .submit-btn {
+            background: #ffd700;
+            color: #1e3a8a;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+        .form-note {
+            margin-top: 1rem;
+            text-align: center;
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="formidable logo.jpg" alt="Formidable Partners Logo">
+                    <div class="logo-text">
+                        <h1>Formidable Partners</h1>
+                        <p>Economic, Medical & Fire Litigation Consulting</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#expertise" class="nav-link">Areas of Expertise</a></li>
+                    <li><a href="index.html#team" class="nav-link">Our Team</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our expert team to discuss how we can support your litigation needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+                    <input type="hidden" name="_next" value="https://YOUR-DOMAIN.com/thank-you.html">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="expertise">Area of Expertise Needed</label>
+                        <select id="expertise" name="expertise">
+                            <option value="">Select an area</option>
+                            <option value="economic-financial">Economic & Financial Analyses</option>
+                            <option value="bankruptcy">Bankruptcy & Restructuring</option>
+                            <option value="epidemiology">Epidemiology & Cancer Research</option>
+                            <option value="fire-analysis">Fire, Chemical & Combustion Analysis</option>
+                            <option value="wage-hour">Wage & Hour Litigation</option>
+                            <option value="defamation">Defamation & Media Impact</option>
+                            <option value="ophthalmology">Ophthalmology</option>
+                            <option value="radiology">Radiology</option>
+                            <option value="toxicology">Toxicology</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required placeholder="Please describe your case or inquiry..."></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="_to" value="wpowley@formidable.partners">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - Formidable Partners">
+                    <input type="text" name="_gotcha" style="display:none">
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    
+                    <p class="form-note">We'll respond to your inquiry within 24-48 hours.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Formidable Partners</h3>
+                    <p>Leading provider of economic and medical litigation consulting services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="economic-financial-analysis.html">Economic & Financial Analysis</a></li>
+                        <li><a href="bankruptcy-restructuring.html">Bankruptcy Consulting</a></li>
+                        <li><a href="epidemiology-cancer-research.html">Medical Expert Services</a></li>
+                        <li><a href="wage-hour-litigation.html">Employment Litigation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                    <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

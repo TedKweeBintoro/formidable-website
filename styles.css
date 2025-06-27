@@ -663,6 +663,14 @@ body {
         word-break: break-word;
     }
     
+    .contact-us-btn {
+        font-size: 1rem;
+        padding: 0.875rem 1.75rem;
+        margin-top: 1.25rem;
+        width: auto;
+        text-align: center;
+    }
+    
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -694,9 +702,19 @@ body {
     
     .hero-content p {
         font-size: clamp(0.8rem, 2.5vw, 1rem);
-        margin-bottom: clamp(1rem, 2vh, 2rem);
+        margin-bottom: clamp(0.75rem, 1.5vh, 1.5rem);
         line-height: 1.4;
         max-width: 95vw;
+    }
+    
+    .hero-content .contact-us-btn {
+        margin-top: clamp(0.75rem, 1.5vh, 1.25rem);
+        margin-bottom: clamp(0.75rem, 1.5vh, 1.25rem);
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+        padding: clamp(0.6rem, 2vw, 0.75rem) clamp(1.2rem, 4vw, 1.5rem);
+        display: inline-block;
+        z-index: 10;
+        position: relative;
     }
     
     .hero-stats {
@@ -741,6 +759,15 @@ body {
     
     .expert-icon {
         align-self: center;
+    }
+    
+    .contact-us-btn {
+        font-size: 0.95rem;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        width: auto;
+        display: inline-block;
+        text-align: center;
     }
 }
 

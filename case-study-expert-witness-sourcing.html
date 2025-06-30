@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourcing Expert Witnesses Case Study - Formidable Partners</title>
+    <link rel="icon" type="image/jpeg" href="formidable logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .case-study-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px;
+            color: white;
+        }
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .case-study-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .case-study-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .case-study-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .challenge-section, .approach-section, .outcome-section {
+            margin-bottom: 60px;
+        }
+        .challenge-section h2, .approach-section h2, .outcome-section h2 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 30px;
+        }
+        .challenge-section h2::before, .approach-section h2::before, .outcome-section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 100%;
+            background: #2563eb;
+        }
+        .case-details {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+        }
+        .case-details h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .case-details p {
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        .highlight-box h4 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .highlight-box li {
+            color: #4b5563;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .highlight-box li::before {
+            content: "▸";
+            color: #2563eb;
+            position: absolute;
+            left: 0;
+        }
+        .case-study-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .case-study-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .case-study-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="formidable logo.jpg" alt="Formidable Partners Logo">
+                    <div class="logo-text">
+                        <h1>Formidable Partners</h1>
+                        <p>Economic, Medical & Fire Litigation Consulting</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                    <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                    <li><a href="/#team" class="nav-link">Our Team</a></li>
+                    <li><a href="contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Case Study Hero -->
+    <section class="case-study-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>›</span>
+                <a href="/#case-studies">Case Studies</a>
+                <span>›</span>
+                <span style="color: white;">Sourcing Expert Witnesses</span>
+            </div>
+            <h1>Sourcing Expert Witnesses</h1>
+            <p class="case-study-intro">
+                Strategic sourcing and vetting of qualified industry professionals for comprehensive expert analysis and testimony.
+            </p>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-study-content">
+                <div class="case-details">
+                    <h3>Case Overview</h3>
+                    <p>
+                        We supported the development of multiple expert analyses for a legal matter. We sourced and vetted qualified professionals with relevant industry experience, compiled supporting materials from analogous reports, and organized the structure of a comprehensive expert report. The work required careful attention to detail, familiarity with industry practices, and strong coordination with both legal teams and subject matter specialists to ensure the final product was well-supported and clearly articulated.
+                    </p>
+                </div>
+
+                <div class="challenge-section">
+                    <h2>The Challenge</h2>
+                    <p>
+                        The legal matter required multiple expert perspectives from highly specialized fields. Finding experts with the right combination of academic credentials, industry experience, and communication skills presented significant challenges. Additionally, the experts needed to work cohesively to present a unified analysis while maintaining their individual areas of expertise.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>Key Challenges:</h4>
+                        <ul>
+                            <li>Identifying experts with specific industry knowledge and litigation experience</li>
+                            <li>Vetting candidates for both technical expertise and communication abilities</li>
+                            <li>Coordinating multiple experts to create cohesive analyses</li>
+                            <li>Compiling supporting materials from diverse sources and analogous cases</li>
+                            <li>Ensuring expert reports met both legal and technical standards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="approach-section">
+                    <h2>Our Approach</h2>
+                    <p>
+                        We leveraged our extensive network and systematic vetting process to identify and recruit the most qualified experts for the case. Our team managed the entire process from initial outreach through report completion, ensuring seamless coordination between all parties.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>Methodology:</h4>
+                        <ul>
+                            <li>Conducted thorough search for professionals with relevant industry experience</li>
+                            <li>Implemented rigorous vetting process evaluating credentials and track records</li>
+                            <li>Compiled comprehensive supporting materials from analogous reports and cases</li>
+                            <li>Organized and structured expert report framework for clarity and impact</li>
+                            <li>Coordinated closely with legal teams to align expert opinions with case strategy</li>
+                            <li>Facilitated collaboration between multiple subject matter specialists</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="outcome-section">
+                    <h2>The Outcome</h2>
+                    <p>
+                        Our expert sourcing and coordination efforts resulted in a powerful, multi-faceted expert analysis that significantly strengthened the legal team's position. The carefully vetted experts provided compelling testimony backed by thorough research and clear presentation. The comprehensive reports we helped structure became key elements in the successful resolution of the matter.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>Key Results:</h4>
+                        <ul>
+                            <li>Successfully sourced and vetted multiple highly qualified expert witnesses</li>
+                            <li>Created comprehensive, well-structured expert reports</li>
+                            <li>Ensured seamless coordination between experts and legal teams</li>
+                            <li>Compiled extensive supporting documentation from analogous cases</li>
+                            <li>Delivered expert testimony that was both technically sound and clearly articulated</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="case-study-cta">
+        <div class="container">
+            <h2>Need Expert Witnesses for Your Case?</h2>
+            <p>Our team specializes in sourcing, vetting, and coordinating expert witnesses across multiple disciplines</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#case-studies" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View More Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Formidable Partners</h3>
+                    <p>Leading provider of economic and medical litigation consulting services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="economic-financial-analysis">Securities Analysis</a></li>
+                        <li><a href="bankruptcy-restructuring">Bankruptcy Consulting</a></li>
+                        <li><a href="epidemiology-cancer-research">Medical Expert Services</a></li>
+                        <li><a href="wage-hour-litigation">Employment Litigation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                    <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

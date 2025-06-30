@@ -289,7 +289,7 @@ body {
 
 .feature {
     padding: 2rem;
-    background: #f8fafc;
+    background: white;
     border-radius: 12px;
     border-left: 4px solid #2b6cb0;
     text-align: center;
@@ -884,6 +884,19 @@ html {
 .contact-us-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Override CTA button styles to make them yellow */
+.cta-btn-primary {
+    background: #ffd700 !important;
+    color: #1e3a8a !important;
+}
+
+.cta-btn-primary:hover {
+    background: #ffd700 !important;
+    color: #1e3a8a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4) !important;
 }
 
 /* Add padding to sections to account for fixed header */

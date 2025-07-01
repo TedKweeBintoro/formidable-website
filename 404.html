@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Formidable Partners</title>
+    <link rel="icon" type="image/jpeg" href="formidable logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 404 Specific Styles */
+        .error-404 {
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.85) 0%, rgba(43, 108, 176, 0.85) 100%),
+                        url('looking-up-at-skyscrapers-and-blue-sky.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: scroll;
+            color: white;
+            min-height: calc(100vh - var(--header-height));
+            margin-top: var(--header-height);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 4rem clamp(1rem, 4vw, 2rem);
+        }
+
+        .error-content {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .error-code {
+            font-size: clamp(4rem, 12vw, 8rem);
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .error-message {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .home-btn {
+            background: #ffd700;
+            color: #1e3a8a;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .back-btn {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .helpful-links {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .helpful-links h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .helpful-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .helpful-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .helpful-link i {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .error-404 {
+                margin-top: var(--header-height-mobile);
+                min-height: calc(100vh - var(--header-height-mobile));
+                padding: 2rem 1rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .home-btn, .back-btn {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="formidable logo.jpg" alt="Formidable Partners Logo">
+                    <div class="logo-text">
+                        <h1>Formidable Partners</h1>
+                        <p>Economic, Medical & Fire Litigation Consulting</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#expertise" class="nav-link">Areas of Expertise</a></li>
+                    <li><a href="index.html#case-studies" class="nav-link">Case Studies</a></li>
+                    <li><a href="index.html#team" class="nav-link">Our Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 404 Error Section -->
+    <section class="error-404">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Page Not Found</h1>
+                <p class="error-message">
+                    We're sorry, but the page you're looking for doesn't exist. It may have been moved, deleted, or you entered the wrong URL.
+                </p>
+                
+                <div class="error-actions">
+                    <a href="index.html" class="home-btn">
+                        <i class="fas fa-home"></i> Go Home
+                    </a>
+                    <a href="javascript:history.back()" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </a>
+                </div>
+
+                <div class="helpful-links">
+                    <h3>Popular Pages</h3>
+                    <div class="links-grid">
+                        <a href="economic-financial-analysis.html" class="helpful-link">
+                            <i class="fas fa-briefcase"></i>
+                            Economic Analysis
+                        </a>
+                        <a href="bankruptcy-restructuring.html" class="helpful-link">
+                            <i class="fas fa-chart-bar"></i>
+                            Bankruptcy & Restructuring
+                        </a>
+                        <a href="epidemiology-cancer-research.html" class="helpful-link">
+                            <i class="fas fa-microscope"></i>
+                            Epidemiology Research
+                        </a>
+                        <a href="fire-chemical-combustion-analysis.html" class="helpful-link">
+                            <i class="fas fa-fire"></i>
+                            Fire Analysis
+                        </a>
+                        <a href="contact.html" class="helpful-link">
+                            <i class="fas fa-envelope"></i>
+                            Contact Us
+                        </a>
+                        <a href="index.html#case-studies" class="helpful-link">
+                            <i class="fas fa-folder-open"></i>
+                            Case Studies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for mobile menu -->
+    <script src="script.js"></script>
+</body>
+</html> 

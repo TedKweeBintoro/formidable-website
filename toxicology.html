@@ -199,6 +199,109 @@
             background: white;
             color: #1e3a8a;
         }
+        
+        /* Expert Profile Styles */
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .expert-profile-card {
+                padding: 30px 20px;
+            }
+            
+            .expert-credentials h3 {
+                font-size: 1.6rem;
+            }
+            
+            .expert-title {
+                font-size: 1rem;
+            }
+            
+            .expertise-highlights {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .highlight-item {
+                padding: 15px;
+            }
+            
+            .expert-description > p {
+                text-align: left;
+            }
+        }
     </style>
 </head>
 <body>
@@ -309,6 +412,60 @@
                     <div class="step-number">4</div>
                     <h3>Causation Analysis</h3>
                     <p>Application of Bradford Hill criteria and weight of evidence to establish causal relationships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Distinguished Clinical Toxicology Expertise</h2>
+                <p>Our team includes exceptionally experienced experts in clinical toxicology and emergency medicine</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Clinical Toxicologist</h3>
+                        <p class="expert-title">MD - Clinical Toxicology & Emergency Medicine</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>Our senior clinical toxicologist brings exceptional experience in clinical toxicology and emergency medicine, with a robust academic record that includes 17 distinct academic appointments spanning roles from Assistant Professor to Distinguished Clinical Professor at the University of Colorado and affiliated institutions. This expert has held numerous professional appointments as an attending physician and director in areas including clinical pharmacology, toxicology, and emergency medicine.</p>
+                        
+                        <p>With proven expertise in high-stakes litigation, this expert has provided expert witness testimony in more than six high-profile medico-legal cases between 2018 and 2025.</p>
+                        
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Academic Excellence</h4>
+                                    <p>17 distinct academic appointments at University of Colorado and affiliated institutions, progressing from Assistant Professor to Distinguished Clinical Professor.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-stethoscope"></i>
+                                <div>
+                                    <h4>Clinical Leadership</h4>
+                                    <p>Extensive professional appointments as attending physician and director in clinical pharmacology, toxicology, and emergency medicine.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>Scholarly Publications</h4>
+                                    <p>Over 60 peer-reviewed publications, multiple book chapters, and invited presentations.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-balance-scale"></i>
+                                <div>
+                                    <h4>Litigation Experience</h4>
+                                    <p>Expert witness testimony in more than six high-profile medico-legal cases.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -199,6 +199,109 @@
             background: white;
             color: #1e3a8a;
         }
+        
+        /* Expert Profile Styles */
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .expert-profile-card {
+                padding: 30px 20px;
+            }
+            
+            .expert-credentials h3 {
+                font-size: 1.6rem;
+            }
+            
+            .expert-title {
+                font-size: 1rem;
+            }
+            
+            .expertise-highlights {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .highlight-item {
+                padding: 15px;
+            }
+            
+            .expert-description > p {
+                text-align: left;
+            }
+        }
     </style>
 </head>
 <body>
@@ -309,6 +412,60 @@
                     <div class="step-number">4</div>
                     <h3>Expert Opinion</h3>
                     <p>Development of scientifically grounded expert opinions supported by current medical knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Distinguished Cancer Epidemiology Expertise</h2>
+                <p>Our team includes world-renowned experts with decades of experience in cancer research and epidemiology</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Cancer Epidemiologist</h3>
+                        <p class="expert-title">MD, MPH - Cancer Research & Environmental Health</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>Our senior epidemiologist brings over three decades of distinguished experience in cancer epidemiology, with leadership roles at premier international research institutions including the International Agency for Research on Cancer (IARC), Icahn School of Medicine at Mount Sinai, and Stony Brook University. This expert has conducted groundbreaking research on environmental and occupational cancer risks, with particular expertise in cancer prevention and global health initiatives.</p>
+                        
+                        <p>With an outstanding litigation track record, this expert has been deposed dozens of times and has never been excluded from providing testimony.</p>
+                        
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-microscope"></i>
+                                <div>
+                                    <h4>Research Excellence</h4>
+                                    <p>Thousands of peer-reviewed publications in leading medical journals, with extensive research on talc exposure and its relationship to ovarian and lung cancer.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>International Leadership</h4>
+                                    <p>Leadership roles in prestigious international research consortia and collaborative studies on cancer causation and prevention.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>Academic Recognition</h4>
+                                    <p>Elected fellow of multiple prestigious medical and scientific academies, with a track record of mentoring the next generation of cancer researchers.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Global Impact</h4>
+                                    <p>Significant contributions to global cancer research and prevention strategies, with expertise spanning environmental health and occupational medicine.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

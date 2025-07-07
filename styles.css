@@ -45,6 +45,13 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo img {
@@ -175,7 +182,7 @@ body {
 /* Expertise Section */
 .expertise {
     padding: 80px 0;
-    background: #f8fafc;
+    background: white;
 }
 
 .expertise h2 {
@@ -202,7 +209,7 @@ body {
 }
 
 .expertise-card {
-    background: white;
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
@@ -322,7 +329,7 @@ body {
 /* Team Section */
 .team {
     padding: 80px 0;
-    background: white;
+    background: #f8f9fa;
 }
 
 .team h2 {
@@ -424,7 +431,7 @@ body {
 }
 
 .case-study-card {
-    background: #f8fafc;
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);

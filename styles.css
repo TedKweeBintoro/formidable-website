@@ -179,6 +179,34 @@ body {
     white-space: nowrap; /* Prevent wrapping */
 }
 
+/* Content Section - Universal class for consistent spacing and alternating backgrounds */
+.content-section {
+    padding: 80px 0;
+}
+
+.content-section:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Card color adjustments based on section background */
+/* White cards on gray background sections (even sections) */
+.content-section:nth-child(even) .expertise-card,
+.content-section:nth-child(even) .expert-item,
+.content-section:nth-child(even) .case-study-card,
+.content-section:nth-child(even) .contact-card,
+.content-section:nth-child(even) .contact-cta {
+    background: white;
+}
+
+/* Gray cards on white background sections (odd sections) */
+.content-section:nth-child(odd) .expertise-card,
+.content-section:nth-child(odd) .expert-item,
+.content-section:nth-child(odd) .case-study-card,
+.content-section:nth-child(odd) .contact-card,
+.content-section:nth-child(odd) .contact-cta {
+    background: #f8f9fa;
+}
+
 /* Expertise Section */
 .expertise {
     padding: 80px 0;

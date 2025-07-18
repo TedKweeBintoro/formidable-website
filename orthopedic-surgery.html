@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthopedic Surgery - Formidable Partners</title>
+    <link rel="icon" type="image/jpeg" href="formidable logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 120px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+        
+        /* Expert Profile Styles */
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .expert-profile-card {
+                padding: 30px 20px;
+            }
+            
+            .expert-credentials h3 {
+                font-size: 1.6rem;
+            }
+            
+            .expert-title {
+                font-size: 1rem;
+            }
+            
+            .expertise-highlights {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .highlight-item {
+                padding: 15px;
+            }
+            
+            .expert-description > p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="/" class="logo">
+                    <img src="formidable logo.jpg" alt="Formidable Partners Logo">
+                    <div class="logo-text">
+                        <h1>Formidable Partners</h1>
+                        <p>Economic, Medical & Fire Litigation Consulting</p>
+                    </div>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                    <li><a href="/#team" class="nav-link">Our Expert Team</a></li>
+                    <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                    <li><a href="/#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>›</span>
+                <a href="/#expertise">Areas of Expertise</a>
+                <span>›</span>
+                <span style="color: white;">Orthopedic Surgery</span>
+            </div>
+            <h1>Orthopedic Surgery</h1>
+            <p class="expertise-intro">
+                Our orthopedic surgery experts bring unmatched clinical and academic leadership in orthopedic trauma, complex reconstruction, and joint replacement. With deep experience in both public health systems and private practice, they deliver authoritative insights into surgical care, injury mechanisms, and long-term orthopedic outcomes for litigation support.
+            </p>
+            <a href="contact" class="contact-us-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fellowship-Trained Orthopedic Trauma Expertise</h2>
+                <p>Our lead orthopedic surgery expert is a fellowship-trained orthopedic trauma surgeon and a board-certified diplomate</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Orthopedic Trauma Surgeon</h3>
+                        <p class="expert-title">MD - Board-Certified Orthopedic Surgery & Trauma</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>Our lead orthopedic surgery expert is a fellowship-trained orthopedic trauma surgeon and a board-certified diplomate of the American Board of Orthopaedic Surgery. With a high-volume practice spanning both public hospital leadership and private orthopedic trauma care, this expert provides deep insight into fractures, joint reconstruction, infections, and complex surgical decision-making.</p>
+                        
+                        <p>This expert has held senior leadership roles in major trauma centers, including Chair of Orthopedic Surgery, Director of Orthopedic Trauma, and Medical Director of Orthopedics at multiple institutions. They are also a California Qualified Medical Examiner (QME) and have conducted over 75 medico-legal reviews in orthopedic matters.</p>
+                        
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-user-md"></i>
+                                <div>
+                                    <h4>Subspecialty Expertise</h4>
+                                    <p>Orthopedic trauma (fractures, infection, nonunion), circular external fixation, limb reconstruction, hip and knee arthroplasty (primary and revision), and foot & ankle surgery.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-hospital"></i>
+                                <div>
+                                    <h4>Hospital and Academic Leadership</h4>
+                                    <p>Extensive leadership history in trauma center modernization, orthopedic department growth, and resident education. Roles have included Chair of Orthopedic Surgery, Director of Orthopedic Trauma, and Orthopedic Division Chair.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-balance-scale"></i>
+                                <div>
+                                    <h4>Legal Experience</h4>
+                                    <p>Over 75 case reviews as a medical-legal consultant and Qualified Medical Examiner in California. Provides expert opinions in both plaintiff and defense matters related to orthopedic injuries, surgical care, and standards of practice.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>National & International Recognition</h4>
+                                    <p>Invited speaker at AAOS, OTA, and AO North America trauma courses (basic and advanced). Consultant to major device manufacturers and contributor to orthopedic innovation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Publications & Speaking Engagements</h2>
+                <p>Extensive scholarly contributions to orthopedic trauma literature and medical education</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Peer-reviewed Publications</h3>
+                    <p>Topics include ankle and femoral fractures, wound complications, soft tissue protocols, external fixation failures, and orthopedic surgical timing.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Book Chapters</h3>
+                    <p>Author on orthopedic trauma, ethics, and fracture care in austere environments. Contributor to textbooks on lower extremity trauma and global orthopedic care.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Lectures & Courses</h3>
+                    <p>Faculty for 10+ years of national and international trauma training courses. Frequent invited speaker at academic grand rounds, orthopedic associations, and industry-sponsored programs on surgical complications, ethics, and advanced techniques.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Ethics & Education</h3>
+                    <p>Past ethics committee member and bioethics course director. Recipient of multiple teaching awards, including recognition for outstanding residency education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Leadership Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Global Surgical Leadership</h2>
+                <p>Committed to advancing orthopedic care worldwide through international missions and education</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-description">
+                        <p>This expert is deeply committed to global orthopedic care, having led and participated in over 10 international surgical missions across Central America, Africa, and Asia. As a nonprofit founder and international educator, they specialize in deformity correction and circular fixator techniques in resource-limited settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Expert Analysis Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas of Expert Analysis</h2>
+                <p>Comprehensive orthopedic expertise across surgical complications, trauma mechanisms, and care standards</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Orthopedic Surgical Complications</h3>
+                    <p>Expert analysis of post-operative complications, infection management, and surgical failure patterns in orthopedic procedures.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Post-traumatic Deformity & Nonunion</h3>
+                    <p>Assessment of healing complications, bone union failures, and reconstruction options for complex orthopedic injuries.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Joint Reconstruction & Arthroplasty</h3>
+                    <p>Evaluation of joint replacement procedures, revision surgeries, and implant-related complications in hip and knee arthroplasty.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Foot and Ankle Trauma</h3>
+                    <p>Specialized analysis of lower extremity injuries, surgical approaches, and long-term functional outcomes.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Infections & Delayed Healing</h3>
+                    <p>Expert assessment of orthopedic infections, wound complications, and factors affecting bone and soft tissue healing.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Mechanism of Orthopedic Injuries</h3>
+                    <p>Analysis of injury patterns, force mechanisms, and biomechanical factors in orthopedic trauma cases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Case Types Supported</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Catastrophic orthopedic injuries</li>
+                    <li><i class="fas fa-check"></i>Post-operative complications</li>
+                    <li><i class="fas fa-check"></i>Product liability and implant failure</li>
+                    <li><i class="fas fa-check"></i>Complex trauma reconstruction</li>
+                    <li><i class="fas fa-check"></i>Workers' compensation claims</li>
+                    <li><i class="fas fa-check"></i>Personal injury and motor vehicle accidents</li>
+                    <li><i class="fas fa-check"></i>QME evaluations and impairment ratings</li>
+                    <li><i class="fas fa-check"></i>Institutional care and surgical negligence</li>
+                    <li><i class="fas fa-check"></i>Workplace and high-impact trauma</li>
+                    <li><i class="fas fa-check"></i>Medical necessity and standard of care</li>
+                    <li><i class="fas fa-check"></i>Device-related complications and surgical planning</li>
+                    <li><i class="fas fa-check"></i>External fixation and Ilizarov techniques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Get Orthopedic Surgery Expertise</h2>
+            <p>Our orthopedic experts deliver clear, defensible, and medically sound expert opinions for litigation, QME, and consulting assignments.</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Formidable Partners</h3>
+                    <p>Leading provider of economic and medical litigation consulting services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="ophthalmology">Ophthalmology</a></li>
+                        <li><a href="radiology">Radiology</a></li>
+                        <li><a href="toxicology">Toxicology</a></li>
+                        <li><a href="orthopedic-surgery">Orthopedic Surgery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                    <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

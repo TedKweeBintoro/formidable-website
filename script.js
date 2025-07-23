@@ -297,3 +297,73 @@ scrollToTopBtn.addEventListener('mouseleave', () => {
     scrollToTopBtn.style.transform = 'translateY(0)';
     scrollToTopBtn.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
 }); 
+// ============================================================================
+// HEADER AND FOOTER MANAGEMENT
+// ============================================================================
+
+// Function to load header and footer components
+async function loadComponents() {
+    try {
+        // Load header
+        const headerResponse = await fetch('includes/header.html');
+        if (headerResponse.ok) {
+            const headerHTML = await headerResponse.text();
+            const headerContainer = document.getElementById('header-container');
+            if (headerContainer) {
+                headerContainer.innerHTML = headerHTML;
+                
+                // Fix home link for index page
+                if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) {
+                    const homeLink = document.querySelector('.home-link');
+                    if (homeLink) {
+                        homeLink.href = '#home';
+                    }
+                }
+                
+                // Reinitialize hamburger menu after loading header
+                initializeHamburgerMenu();
+            }
+        }
+
+        // Load footer
+        const footerResponse = await fetch('includes/footer.html');
+        if (footerResponse.ok) {
+            const footerHTML = await footerResponse.text();
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer) {
+                footerContainer.innerHTML = footerHTML;
+            }
+        }
+    } catch (error) {
+        console.error('Error loading components:', error);
+        // Fallback: keep existing header/footer if loading fails
+    }
+}
+
+// Function to initialize hamburger menu (needed after dynamic loading)
+function initializeHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (hamburger && navMenu) {
+        // Remove any existing event listeners
+        hamburger.replaceWith(hamburger.cloneNode(true));
+        const newHamburger = document.querySelector('.hamburger');
+        
+        newHamburger.addEventListener('click', () => {
+            newHamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                newHamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+}
+
+// Load components when DOM is ready
+document.addEventListener('DOMContentLoaded', loadComponents);

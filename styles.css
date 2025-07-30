@@ -55,7 +55,7 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 65px;
     width: auto;
     object-fit: contain;
 }
@@ -621,7 +621,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -666,6 +666,50 @@ body {
     padding-top: 1rem;
     text-align: center;
     color: #cbd5e0;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #cbd5e0;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.social-link:hover {
+    color: #ffd700;
+    transform: translateX(5px);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.social-link.linkedin:hover {
+    color: #0077b5;
+}
+
+.social-link.linkedin:hover i {
+    color: #0077b5;
+}
+
+@media (min-width: 768px) {
+    .social-links {
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
 
 /* Responsive Design */

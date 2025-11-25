@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LKT07VVR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LKT07VVR4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuropathology &amp; Brain Tumor Pathology - Formidable Partners</title>
+    <link rel="icon" type="image/png" href="formidable_square.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+            padding: 140px 0 60px;
+            color: white;
+        }
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 860px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8fafc;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #475569;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+            margin-top: 40px;
+        }
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .expert-credentials h3 {
+            color: #0f172a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .expert-description > p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 24px;
+            text-align: justify;
+        }
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 10px;
+            border-left: 4px solid #2563eb;
+        }
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.4rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .highlight-item h4 {
+            color: #0f172a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .highlight-item p {
+            color: #475569;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+            border-top: 4px solid #2563eb;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+        }
+        .service-card h3 {
+            color: #0f172a;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+        .service-card p {
+            color: #475569;
+            line-height: 1.6;
+            font-size: 0.97rem;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+        }
+        .case-types h3 {
+            color: #0f172a;
+            margin-bottom: 22px;
+            font-size: 1.5rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 14px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #0f172a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+        }
+        .expertise-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 26px;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 14px 26px;
+            font-size: 1.05rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #0f172a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #0f172a;
+        }
+        @media (max-width: 768px) {
+            .expert-profile-card {
+                padding: 30px 20px;
+            }
+            .expert-credentials h3 {
+                font-size: 1.6rem;
+            }
+            .expert-title {
+                font-size: 1.05rem;
+            }
+            .expert-description > p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="/" class="logo">
+                        <img src="formidable_square.png" alt="Formidable Partners Logo">
+                        <div class="logo-text">
+                            <h1>Formidable Partners</h1>
+                            <p>Economic, Medical &amp; Fire Litigation Consulting</p>
+                        </div>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                        <li><a href="/#team" class="nav-link">Our Expert Team</a></li>
+                        <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                        <li><a href="/#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>&gt;</span>
+                <a href="/#expertise">Areas of Expertise</a>
+                <span>&gt;</span>
+                <span style="color: white;">Neuropathology &amp; Brain Tumor Pathology</span>
+            </div>
+            <h1>Neuropathology &amp; Brain Tumor Pathology</h1>
+            <p class="expertise-intro">
+                Expert neuropathologic consultation for complex brain, spinal cord, and peripheral nerve cases. We connect histopathology, molecular signatures, and clinical course, grounded in decades of academic leadership and bench-to-bedside research in glioma invasion and angiogenesis.
+            </p>
+            <a href="contact" class="contact-us-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pathology Leadership</h2>
+                <p>Led by a board-certified neuropathologist who directs a neuro-oncology laboratory and has shaped modern understanding of glioma invasion, hypoxia response, and tumor vascular biology.</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Neuropathology Expert Witness</h3>
+                        <p class="expert-title">Board-Certified Neuropathologist | Division Chief | Director, Molecular Neuro-Oncology Laboratory</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>A nationally recognized neuropathologist with more than three decades at major academic medical centers, serving as professor of pathology and neurosurgery, division chief of neuropathology, and director of a molecular neuro-oncology laboratory. Licensed and dual-board certified in Anatomic Pathology and Neuropathology, with thousands of brain and spinal tumor specimens interpreted while mentoring residents, fellows, and junior faculty.</p>
+                        <p>Research pioneered models of glioma invasion and angiogenesis, introduced the concept of vascular involution, and demonstrated how hypoxia-inducible pathways (HIF-1alpha/CXCR4) drive tumor spread. Co-developed predictive MR algorithms for low-grade gliomas and is repeatedly recognized for teaching and scholarship with national awards.</p>
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Board-Certified &amp; Licensed</h4>
+                                    <p>Medical license; American Board of Pathology certifications in Anatomic Pathology and Neuropathology.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-microscope"></i>
+                                <div>
+                                    <h4>Academic Leadership</h4>
+                                    <p>Professor of Pathology and Neurosurgery; Chief of Neuropathology; long-standing neuropathologist at major academic medical centers.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-dna"></i>
+                                <div>
+                                    <h4>Translational Neuro-Oncology</h4>
+                                    <p>Directs a molecular neuro-oncology laboratory focused on glioma angiogenesis, invasion, and hypoxia signaling, with extensive publication and editorial-board service.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>Recognized Educator</h4>
+                                    <p>Recipient of multiple teaching honors and national recognition for neuro-oncology scholarship.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p><strong>Training.</strong> B.S. in mathematics and biology; M.D.; Ph.D. in neurology and neurosurgery; internship in general surgery; residency in anatomic pathology; fellowships in neuropathology and cell biology at leading academic medical centers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Focused Neuropathology Services</h2>
+                <p>Clear, defensible opinions for litigation, regulatory review, and complex clinical questions.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Brain &amp; Spinal Tumor Diagnostics</h3>
+                    <p>Comprehensive histopathology for gliomas, meningiomas, pituitary tumors, pediatric brain tumors, and metastatic disease with correlation to clinical and imaging findings.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Molecular &amp; Hypoxia Pathways</h3>
+                    <p>Interpretation of hypoxia-inducible signaling (HIF-1alpha/CXCR4), angiogenic markers, and related molecular assays to clarify mechanisms of invasion and treatment response.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Treatment Effect &amp; Recurrence Analysis</h3>
+                    <p>Evaluation of surgical margins, radiation/chemotherapy effect, anti-angiogenic therapy patterns, and progression versus pseudoprogression in high-grade gliomas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Expert Testimony &amp; Reporting</h3>
+                    <p>Board-certified expert witness testimony, deposition support, and detailed reports that integrate pathology, molecular data, and peer-reviewed literature.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Research-Grade Review</h3>
+                    <p>Consultative review of experimental models, including glioma invasion assays and angiogenesis studies, informed by decades of laboratory leadership.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Education &amp; Case Conferences</h3>
+                    <p>Case-based teaching for legal teams and medical stakeholders, translating complex neuropathology into clear, courtroom-ready narratives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Representative Case Themes</h2>
+                <p>Examples of the neuropathology issues we address for plaintiff and defense teams.</p>
+            </div>
+            <div class="case-types">
+                <h3>We frequently consult on:</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check-circle"></i>Glioblastoma growth patterns, invasion pathways, and vascular proliferation.</li>
+                    <li><i class="fas fa-check-circle"></i>Low-grade glioma progression, treatment response, and surveillance interpretation.</li>
+                    <li><i class="fas fa-check-circle"></i>Angiogenesis and hypoxia-driven change in gliomas, including HIF-1alpha/CXCR4 dynamics.</li>
+                    <li><i class="fas fa-check-circle"></i>Pediatric brain tumors and diffuse intrinsic pontine gliomas, with clinicopathologic correlation.</li>
+                    <li><i class="fas fa-check-circle"></i>Therapy-related effects and recurrence in meningiomas, vestibular schwannomas, and pituitary tumors.</li>
+                    <li><i class="fas fa-check-circle"></i>Molecular classification disputes, including IDH status, methylation profiling, and emerging biomarkers.</li>
+                    <li><i class="fas fa-check-circle"></i>Cause-of-death and central nervous system pathology in complex autopsy cases.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Put Neuropathology Evidence on Firm Ground</h2>
+            <p>Engage board-certified neuropathology expertise that integrates histology, molecular drivers, and clinical context.</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>    <div id="footer-container">
+        <!-- Fallback footer - will be replaced by JavaScript -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Formidable Partners</h3>
+                        <p>Leading provider of economic and medical litigation consulting services.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="economic-financial-analysis">Securities Analysis</a></li>
+                            <li><a href="bankruptcy-restructuring">Bankruptcy Consulting</a></li>
+                            <li><a href="epidemiology-cancer-research">Medical Expert Services</a></li>
+                            <li><a href="plastic-surgery">Plastic Surgery</a></li>
+                            <li><a href="pathology">Neuropathology</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                        <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                                        </div>
+                    <div class="footer-section">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/formidable-partners" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

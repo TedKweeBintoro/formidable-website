@@ -27,3 +27,44 @@ Use this guide to add another anonymized practice area page and surface it on th
 
 ## Template
 - Use `practice-template.html` as a starting point. It already includes the standard gradient, section scaffold (hero, expert profile, services, approach, case types, CTA), and fallback header/footer wrappers for the dynamic loader.
+
+## Page tree (subject/topics)
+```
+Main pages:
+  index.html
+  contact.html
+  thank-you.html
+  404.html
+
+Practice areas:
+  accident-reconstruction.html
+  acoustical-engineering-audiology.html
+  analytical-chemistry-air-quality.html
+  bankruptcy-restructuring.html
+  defamation-media-impact.html
+  economic-financial-analysis.html
+  education-policy-leadership.html
+  epidemiology-cancer-research.html
+  fire-chemical-combustion-analysis.html
+  life-care-planning.html
+  ophthalmology.html
+  orthopedic-surgery.html
+  pathology.html
+  perioperative-nursing.html
+  perioperative-nursing-legal-nurse-consulting.html
+  plastic-surgery.html
+  radiology.html
+  toxicology.html
+  wage-hour-litigation.html
+
+Case studies:
+  case-study-bankruptcy-analysis.html
+  case-study-defamation.html
+  case-study-epidemiology.html
+  case-study-fire-and-chemical-reaction-analysis.html
+  case-study-pediatric-ophthalmology.html
+  case-study-solvency-analysis.html
+
+Template:
+  practice-template.html
+```

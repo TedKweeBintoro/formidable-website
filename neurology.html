@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LKT07VVR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LKT07VVR4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurology &amp; Neurocritical Care - Formidable Partners</title>
+    <link rel="icon" type="image/png" href="formidable_square.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item:nth-child(1),
+        .service-item:nth-child(2),
+        .service-item:nth-child(3) {
+            grid-column: span 2;
+        }
+        .service-item:nth-child(4),
+        .service-item:nth-child(5) {
+            grid-column: span 3;
+        }
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-item:nth-child(1),
+            .service-item:nth-child(2),
+            .service-item:nth-child(3),
+            .service-item:nth-child(4),
+            .service-item:nth-child(5) {
+                grid-column: span 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-item {
+                grid-column: span 1;
+            }
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>    <div id="header-container">
+        <!-- Fallback header - will be replaced by JavaScript -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="/" class="logo">
+                        <img src="formidable_square.png" alt="Formidable Partners Logo">
+                        <div class="logo-text">
+                            <h1>Formidable Partners</h1>
+                            <p>Economic, Medical & Fire Litigation Consulting</p>
+                        </div>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                        <li><a href="/#team" class="nav-link">Our Expert Team</a></li>
+                        <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                        <li><a href="/#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>›</span>
+                <a href="/#expertise">Areas of Expertise</a>
+                <span>›</span>
+                <span style="color: white;">Neurology &amp; Neurocritical Care</span>
+            </div>
+            <h1>Neurology &amp; Neurocritical Care</h1>
+            <p class="expertise-intro">
+                Board-certified neurologist and clinical neurophysiology expert supporting stroke, seizure, neurocritical care, and complex neurologic matters with rigorous record review and testimony-ready analysis.
+            </p>
+            <a href="contact" class="contact-us-btn">Contact Us</a>
+</div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lead Neurology Consultant</h2>
+                <p>Hospital-based neurologist and educator with leadership roles across acute care, tele-neurology, and physician development programs.</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Neurohospitalist &amp; Clinical Neurophysiology Specialist</h3>
+                        <p class="expert-title">MD • Board-Certified Neurology &amp; Clinical Neurophysiology (ABPN) • Former Academic Faculty &amp; Program Director • National Neurology Societies</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>Leads inpatient neurology services across multiple health systems, covering acute stroke activation, seizure stabilization, neuromuscular emergencies, and neurocritical care consults. Designed and implemented training, mentoring, and performance programs for attending physicians and residents while holding faculty appointments at leading universities.</p>
+                        <p>Advises legal teams on neurologic standards of care, timelines for tPA and thrombectomy decisions, seizure and status epilepticus management, EEG interpretation, neuroimaging review, and documentation quality. Provides balanced opinions grounded in peer-reviewed literature, national guidelines, and experience directing tele-neurology coverage and education initiatives.</p>
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-hospital-user"></i>
+                                <div>
+                                    <h4>Acute Neurology Leadership</h4>
+                                    <p>Leads stroke and seizure coverage in community and academic hospitals, coordinating multidisciplinary care pathways.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-x-ray"></i>
+                                <div>
+                                    <h4>Advanced Diagnostics</h4>
+                                    <p>Interprets CT/MRI neuroimaging, EEG, EMG, and nerve conduction studies to connect findings with clinical course.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <h4>Educator &amp; Program Builder</h4>
+                                    <p>Directed graduate medical education and physician development, crafting curricula, simulations, and QA programs.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-gavel"></i>
+                                <div>
+                                    <h4>Neurology Legal Consulting</h4>
+                                    <p>Supports expert reports, deposition preparation, and courtroom testimony with transparent methodology and defensible reasoning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Neurology Litigation Support</h2>
+                <p>Comprehensive neurological evaluations spanning acute care, chronic disease management, and neurophysiology interpretation.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Stroke &amp; Vascular Neurology</h3>
+                    <p>Timeline reconstruction for ischemic and hemorrhagic stroke care, including tPA eligibility, thrombectomy decisions, and post-stroke management.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Seizure &amp; Epilepsy Evaluation</h3>
+                    <p>EEG review, anti-seizure medication management, and differential assessment of seizure versus syncope or psychogenic events.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Neurocritical Care &amp; TBI</h3>
+                    <p>Assessment of traumatic brain injury, spinal cord injury, and neuromuscular emergencies with attention to ICU protocols and recovery trajectories.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Neuroimaging &amp; Neurophysiology</h3>
+                    <p>Interpretation of CT/MRI, EMG, and nerve conduction studies to correlate radiologic and electrophysiologic findings with clinical status.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tele-Neurology &amp; Standard of Care</h3>
+                    <p>Evaluation of remote consult workflows, documentation quality, and adherence to neurologic standards across inpatient and outpatient settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Methodology</h2>
+                <p>Clear, defensible steps designed for complex neurologic matters and courtroom scrutiny.</p>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Intake &amp; Record Synthesis</h3>
+                    <p>Review encounter timelines, imaging, EEG, medication history, and clinical notes to frame key neurologic questions.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Diagnostic Correlation</h3>
+                    <p>Align clinical findings with neuroimaging, electrophysiology, labs, and exam data to establish causation and severity.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Evidence &amp; Differential Review</h3>
+                    <p>Apply guideline-based standards, peer-reviewed literature, and alternative explanations to stress-test conclusions.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Reporting &amp; Testimony Support</h3>
+                    <p>Deliver clear opinions, demonstratives, and deposition preparation tailored to judge and jury comprehension.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Representative Case Types</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Ischemic or hemorrhagic stroke timing, eligibility, and reperfusion decisions</li>
+                    <li><i class="fas fa-check"></i>Seizure, epilepsy, and status epilepticus management and misdiagnosis disputes</li>
+                    <li><i class="fas fa-check"></i>Traumatic brain injury, neurocritical care, and secondary injury prevention</li>
+                    <li><i class="fas fa-check"></i>Peripheral nerve or spinal cord injury causation, prognosis, and functional impact</li>
+                    <li><i class="fas fa-check"></i>Autoimmune and demyelinating disease course, medication selection, and monitoring</li>
+                    <li><i class="fas fa-check"></i>Pediatric neurology, developmental seizure disorders, and neurophysiology interpretation</li>
+                    <li><i class="fas fa-check"></i>Tele-neurology coverage, documentation quality, and standard-of-care adherence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Need Neurology Support?</h2>
+            <p>Engage a board-certified neurologist with hospital leadership and neurophysiology expertise for your next matter.</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>    <div id="footer-container">
+        <!-- Fallback footer - will be replaced by JavaScript -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Formidable Partners</h3>
+                        <p>Leading provider of economic and medical litigation consulting services.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="economic-financial-analysis">Securities Analysis</a></li>
+                            <li><a href="bankruptcy-restructuring">Bankruptcy Consulting</a></li>
+                            <li><a href="epidemiology-cancer-research">Medical Expert Services</a></li>
+                            <li><a href="neurology-consulting">Neurology &amp; Neurocritical Care</a></li>
+                            <li><a href="plastic-surgery">Plastic Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                        <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                                        </div>
+                    <div class="footer-section">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/formidable-partners" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

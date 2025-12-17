@@ -56,6 +56,7 @@ Practice areas:
   radiology.html
   toxicology.html
   wage-hour-litigation.html
+  neurology.html
 
 Case studies:
   case-study-bankruptcy-analysis.html

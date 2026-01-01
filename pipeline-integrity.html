@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LKT07VVR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LKT07VVR4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Integrity - Formidable Partners</title>
+    <link rel="icon" type="image/png" href="formidable_square.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="/" class="logo">
+                        <img src="formidable_square.png" alt="Formidable Partners Logo">
+                        <div class="logo-text">
+                            <h1>Formidable Partners</h1>
+                            <p>Economic, Medical &amp; Fire Litigation Consulting</p>
+                        </div>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="/" class="nav-link home-link">Home</a></li>
+                        <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                        <li><a href="/#team" class="nav-link">Our Expert Team</a></li>
+                        <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                        <li><a href="/#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>&rsaquo;</span>
+                <a href="/#expertise">Areas of Expertise</a>
+                <span>&rsaquo;</span>
+                <span style="color: white;">Pipeline Integrity</span>
+            </div>
+            <h1>Pipeline Integrity</h1>
+            <p class="expertise-intro">
+                Litigation-ready pipeline integrity and asset risk analysis supporting upstream, midstream, and LNG matters.
+                We evaluate integrity management programs, corrosion controls, and compliance obligations with defensible engineering methods.
+            </p>
+            <a href="contact" class="contact-us-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Senior Pipeline Integrity Expert</h2>
+                <p>Credentialed engineering leadership across integrity management, inspection, and risk governance for complex pipeline assets</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Pipeline Integrity &amp; Asset Risk Expert</h3>
+                        <p class="expert-title">P.E. &#8226; NACE Corrosion Specialist &#8226; NACE CP Level 4</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>
+                            A Professional Engineer with 35+ years leading integrity, inspection, and risk management programs for onshore and offshore pipelines,
+                            production facilities, and LNG assets. Experience spans full lifecycle support from design and construction through operations, maintenance,
+                            and decommissioning, with a focus on corrosion control, materials performance, and mechanical integrity governance.
+                        </p>
+                        <p>
+                            Provides litigation and arbitration support for pipeline incidents, regulatory enforcement actions, and compliance disputes.
+                            Work includes record review, integrity program evaluation, failure causation analysis, and testimony-ready reporting grounded in
+                            engineering standards and operational evidence.
+                        </p>
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div>
+                                    <h4>Integrity Program Governance</h4>
+                                    <p>Designs and critiques integrity management programs aligned with CFR 192/195/193 and API/ASME practices.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-industry"></i>
+                                <div>
+                                    <h4>Asset &amp; Facility Integrity</h4>
+                                    <p>Evaluates pipelines, piping, tanks, and static equipment for mechanical integrity and operational risk.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-microscope"></i>
+                                <div>
+                                    <h4>Inspection &amp; ILI Strategy</h4>
+                                    <p>Assesses pigging programs, in-line inspection quality, anomaly evaluation, and verification plans.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-wind"></i>
+                                <div>
+                                    <h4>Leak &amp; Emissions Detection</h4>
+                                    <p>Reviews detection technologies, monitoring plans, and emissions reduction strategies for regulated assets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pipeline Integrity Services</h2>
+                <p>Defensible analysis of integrity programs, inspection data, and compliance obligations for complex pipeline disputes</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Integrity Program Evaluation</h3>
+                    <p>Review integrity management plans, risk models, and maintenance records to identify gaps and support corrective actions.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Corrosion &amp; Materials Failure Analysis</h3>
+                    <p>Assess corrosion mechanisms, materials performance, and mitigation strategies to determine failure causation and remaining life.</p>
+                </div>
+                <div class="service-item">
+                    <h3>ILI &amp; Pigging Program Review</h3>
+                    <p>Evaluate tool selection, run quality, anomaly classification, and verification plans for defensible integrity outcomes.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Regulatory Compliance Review</h3>
+                    <p>Map evidence to CFR 192/195/193 and industry standards to support regulatory responses and expert reporting.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Incident Investigation Support</h3>
+                    <p>Develop timelines and root cause analyses for leaks, ruptures, and releases with clear, testimony-ready findings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Methodology</h2>
+                <p>Structured, standards-driven analysis built for litigation and regulatory scrutiny</p>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Record Review</h3>
+                    <p>Collect IM plans, inspection data, operating history, and incident documentation to establish the technical baseline.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Technical Analysis</h3>
+                    <p>Evaluate corrosion growth, anomaly criticality, and risk models to test integrity and causation hypotheses.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Standards Mapping</h3>
+                    <p>Compare findings to applicable CFR requirements and industry standards for defensible compliance opinions.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Reporting &amp; Testimony</h3>
+                    <p>Deliver clear, litigation-ready reports, exhibits, and expert support for deposition or trial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Representative Case Types</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Pipeline rupture, leak, or release investigations</li>
+                    <li><i class="fas fa-check"></i>Corrosion, erosion, or stress corrosion cracking failure analysis</li>
+                    <li><i class="fas fa-check"></i>In-line inspection accuracy disputes and anomaly verification</li>
+                    <li><i class="fas fa-check"></i>Integrity management program audits and compliance disputes</li>
+                    <li><i class="fas fa-check"></i>Leak detection, emissions monitoring, and reporting matters</li>
+                    <li><i class="fas fa-check"></i>Onshore/offshore facility integrity and decommissioning reviews</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Need Pipeline Integrity Support?</h2>
+            <p>Engage a credentialed expert to evaluate integrity programs, incident causation, and regulatory compliance.</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Formidable Partners</h3>
+                        <p>Leading provider of economic and medical litigation consulting services.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="economic-financial-analysis">Securities Analysis</a></li>
+                            <li><a href="bankruptcy-restructuring">Bankruptcy Consulting</a></li>
+                            <li><a href="epidemiology-cancer-research">Medical Expert Services</a></li>
+                            <li><a href="pipeline-integrity">Pipeline Integrity</a></li>
+                            <li><a href="neurology-consulting">Neurology &amp; Neurocritical Care</a></li>
+                            <li><a href="plastic-surgery">Plastic Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                        <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/formidable-partners" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

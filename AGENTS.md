@@ -46,17 +46,19 @@ Practice areas:
   education-policy-leadership.html
   epidemiology-cancer-research.html
   fire-chemical-combustion-analysis.html
+  food-safety.html
   life-care-planning.html
+  neurology.html
   ophthalmology.html
   orthopedic-surgery.html
   pathology.html
   perioperative-nursing.html
   perioperative-nursing-legal-nurse-consulting.html
+  pipeline-integrity.html
   plastic-surgery.html
   radiology.html
   toxicology.html
   wage-hour-litigation.html
-  neurology.html
 
 Case studies:
   case-study-bankruptcy-analysis.html

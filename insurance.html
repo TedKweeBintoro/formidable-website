@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LKT07VVR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LKT07VVR4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Coverage & Claims Handling - Formidable Partners</title>
+    <link rel="icon" type="image/png" href="formidable_square.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item:nth-child(1),
+        .service-item:nth-child(2),
+        .service-item:nth-child(3) {
+            grid-column: span 2;
+        }
+        .service-item:nth-child(4),
+        .service-item:nth-child(5) {
+            grid-column: span 3;
+        }
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-item:nth-child(1),
+            .service-item:nth-child(2),
+            .service-item:nth-child(3),
+            .service-item:nth-child(4),
+            .service-item:nth-child(5) {
+                grid-column: span 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-item {
+                grid-column: span 1;
+            }
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container">
+        <!-- Fallback header - will be replaced by JavaScript -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="/" class="logo">
+                        <img src="formidable_square.png" alt="Formidable Partners Logo">
+                        <div class="logo-text">
+                            <h1>Formidable Partners</h1>
+                            <p>Economic, Medical & Fire Litigation Consulting</p>
+                        </div>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                        <li><a href="/#team" class="nav-link">Our Expert Team</a></li>
+                        <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                        <li><a href="/#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>›</span>
+                <a href="/#expertise">Areas of Expertise</a>
+                <span>›</span>
+                <span style="color: white;">Insurance Coverage &amp; Claims Handling</span>
+            </div>
+            <h1>Insurance Coverage &amp; Claims Handling</h1>
+            <p class="expertise-intro">
+                Litigation-ready insurance coverage analysis and claims handling insights for complex liability, first-party, and reinsurance disputes.
+            </p>
+            <a href="contact" class="contact-us-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insurance Expert Profile</h2>
+                <p>Senior coverage and claims handling leadership supporting trial teams, arbitration panels, and dispute resolution counsel.</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Insurance Coverage &amp; Litigation Expert</h3>
+                        <p class="expert-title">JD · 40+ years of coverage litigation · Arbitration panelist</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>This senior insurance expert brings more than four decades of trial and appellate experience in complex, multi-party insurance litigation across multiple jurisdictions. Their work spans commercial general liability, professional liability, directors and officers coverage, cyber liability, first-party property, long-term care, and environmental and toxic tort exposures.</p>
+                        <p>They assist counsel with policy interpretation, claims handling standards, custom and practice reviews, and allocation and exhaustion disputes, delivering clear opinions and testimony support for mediation, arbitration, and trial.</p>
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <h4>40+ Years in Coverage Litigation</h4>
+                                    <p>Extensive trial and appellate leadership on high-stakes insurance disputes.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div>
+                                    <h4>Claims Handling &amp; Bad Faith Standards</h4>
+                                    <p>Evaluates carrier conduct, regulatory expectations, and industry custom and practice.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Complex Liability Lines</h4>
+                                    <p>Deep experience with environmental, mass tort, products, and professional liability matters.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-gavel"></i>
+                                <div>
+                                    <h4>Arbitration &amp; Dispute Resolution</h4>
+                                    <p>Supports mediation and arbitration teams with neutral, defensible coverage analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insurance Litigation Support Services</h2>
+                <p>Focused coverage and claims handling insights tailored for counsel, carriers, and arbitrators.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Policy Interpretation &amp; Coverage Opinions</h3>
+                    <p>Clear, defensible analysis of policy language, endorsements, and duty-to-defend obligations.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Claims Handling &amp; Bad Faith Review</h3>
+                    <p>Assessment of claims practices, timelines, and industry standards to support liability and damages analyses.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Allocation &amp; Exhaustion Modeling</h3>
+                    <p>Mapping of coverage towers, trigger analysis, and allocation methodologies for complex loss scenarios.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Underwriting &amp; Reinsurance Consulting</h3>
+                    <p>Review of underwriting files, reinsurance structures, and dispute resolution issues.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Expert Reports &amp; Testimony</h3>
+                    <p>Concise reports and deposition-ready testimony that translate coverage issues for judges and juries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Methodology</h2>
+                <p>Structured analysis built for complex insurance coverage disputes.</p>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Intake &amp; Policy Mapping</h3>
+                    <p>Collect coverage towers, underwriting files, and claims timelines to establish the factual record.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Coverage &amp; Liability Assessment</h3>
+                    <p>Analyze triggers, exclusions, and duty-to-defend issues aligned with jurisdictional authority.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Custom &amp; Practice Benchmarking</h3>
+                    <p>Compare claims handling decisions against industry standards and regulatory expectations.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Reporting &amp; Testimony Support</h3>
+                    <p>Deliver clear expert opinions, mediation support, and testimony-ready reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Representative Case Types</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Commercial general liability, umbrella, and excess coverage disputes.</li>
+                    <li><i class="fas fa-check"></i>Professional liability, E&amp;O, and directors and officers matters.</li>
+                    <li><i class="fas fa-check"></i>Cyber, privacy, and technology risk claims.</li>
+                    <li><i class="fas fa-check"></i>Environmental, toxic tort, and asbestos-related liabilities.</li>
+                    <li><i class="fas fa-check"></i>First-party property, business interruption, and auto liability claims.</li>
+                    <li><i class="fas fa-check"></i>Long-term care, healthcare, and specialty line disputes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Need Insurance Coverage Expertise?</h2>
+            <p>Engage a seasoned insurance coverage expert for policy analysis, claims handling review, and testimony-ready reporting.</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container">
+        <!-- Fallback footer - will be replaced by JavaScript -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Formidable Partners</h3>
+                        <p>Leading provider of economic and medical litigation consulting services.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="economic-financial-analysis">Securities Analysis</a></li>
+                            <li><a href="bankruptcy-restructuring">Bankruptcy Consulting</a></li>
+                            <li><a href="insurance">Insurance Coverage</a></li>
+                            <li><a href="epidemiology-cancer-research">Medical Expert Services</a></li>
+                            <li><a href="hematopathology">Hematopathology</a></li>
+                            <li><a href="pipeline-integrity">Pipeline Integrity</a></li>
+                            <li><a href="neurology-consulting">Neurology &amp; Neurocritical Care</a></li>
+                            <li><a href="plastic-surgery">Plastic Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                        <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/formidable-partners" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

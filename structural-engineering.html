@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LKT07VVR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LKT07VVR4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Engineering - Formidable Partners</title>
+    <link rel="icon" type="image/png" href="formidable_square.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .expertise-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 140px 0 60px; /* Top padding accounts for fixed navbar */
+            color: white;
+        }
+        /* Offset for fixed navbar */
+        body {
+            padding-top: 0;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb a:hover {
+            color: white;
+        }
+        .breadcrumb span {
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .expertise-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .expertise-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .content-section {
+            padding: 80px 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+        .service-item h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .step-card {
+            text-align: center;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+        .case-types {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .case-types h3 {
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .case-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .case-list li {
+            display: flex;
+            align-items: start;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+        .case-list li i {
+            color: #2563eb;
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .expertise-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        .expertise-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .expertise-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-btn-primary {
+            background: white;
+            color: #1e3a8a;
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+        .expert-profile-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+        .expert-credentials {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .expert-credentials h3 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .expert-title {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .expert-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        .expertise-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        .highlight-item i {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        .highlight-item h4 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .highlight-item p {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="/" class="logo">
+                        <img src="formidable_square.png" alt="Formidable Partners Logo">
+                        <div class="logo-text">
+                            <h1>Formidable Partners</h1>
+                            <p>Economic, Medical &amp; Fire Litigation Consulting</p>
+                        </div>
+                    </a>
+                    <ul class="nav-menu">
+                        <li><a href="/" class="nav-link home-link">Home</a></li>
+                        <li><a href="/#expertise" class="nav-link">Areas of Expertise</a></li>
+                        <li><a href="/#team" class="nav-link">Our Expert Team</a></li>
+                        <li><a href="/#case-studies" class="nav-link">Case Studies</a></li>
+                        <li><a href="/#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Expertise Hero -->
+    <section class="expertise-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <span>&rsaquo;</span>
+                <a href="/#expertise">Areas of Expertise</a>
+                <span>&rsaquo;</span>
+                <span style="color: white;">Structural Engineering</span>
+            </div>
+            <h1>Structural Engineering</h1>
+            <p class="expertise-intro">
+                Structural engineering experts delivering forensic damage analysis, design review, and repair recommendations
+                for litigation, insurance, and property disputes involving buildings and infrastructure.
+                We provide defensible, code-aligned opinions across concrete, steel, and municipal systems.
+            </p>
+            <a href="contact" class="contact-us-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Expert Profile Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Senior Structural Engineering Expert</h2>
+                <p>Licensed engineering leadership across forensic investigations, structural design, and environmental damage assessment</p>
+            </div>
+            <div class="expert-profile-card">
+                <div class="expert-content">
+                    <div class="expert-credentials">
+                        <h3>Senior Structural Engineering &amp; Forensic Expert</h3>
+                        <p class="expert-title">Licensed Professional Engineer (PE) &#8226; BS Civil &amp; Environmental Engineering (Structural emphasis)</p>
+                    </div>
+                    <div class="expert-description">
+                        <p>
+                            Seasoned structural engineer with 15+ years of forensic investigation, structural design, and project management experience.
+                            Provides expert witness support for attorneys, insurers, contractors, and owners, delivering clear reports that identify causation,
+                            scope, and repair priorities.
+                        </p>
+                        <p>
+                            Background includes work on concrete and steel structures, pump stations, water towers, and large pipeline systems.
+                            Completed 2,000+ investigations focused on storm, impact, moisture, and construction-related damage with defensible engineering methods.
+                        </p>
+                        <div class="expertise-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div>
+                                    <h4>Forensic Damage Investigations</h4>
+                                    <p>Determines root causes for impacts, wind losses, fire events, and moisture-related structural failures.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-industry"></i>
+                                <div>
+                                    <h4>Structural Design &amp; Rehabilitation</h4>
+                                    <p>Reviews design intent and repair strategies for concrete and steel structures and municipal facilities.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-microscope"></i>
+                                <div>
+                                    <h4>Environmental &amp; Moisture Impacts</h4>
+                                    <p>Evaluates water intrusion, mold exposure, and snow-load impacts on building envelopes.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-wind"></i>
+                                <div>
+                                    <h4>Litigation Support &amp; Testimony</h4>
+                                    <p>Provides deposition-ready reports, exhibits, and testimony support for contested structural claims.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Structural Engineering Services</h2>
+                <p>Forensic evaluations and design support for litigation, insurance, and construction disputes</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Failure &amp; Damage Investigations</h3>
+                    <p>On-site inspections and engineering analysis of structural distress, impacts, and collapse risk.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Roofing &amp; Envelope Assessments</h3>
+                    <p>Hail, wind, and construction defect evaluations with repair scope guidance for insurers and counsel.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Foundation &amp; Settlement Analysis</h3>
+                    <p>Assessments of soil movement, moisture intrusion, and differential settlement affecting structural performance.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Retaining Wall Review</h3>
+                    <p>Stability, drainage, and design compliance evaluations for retaining walls and earth-supported systems.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Infrastructure &amp; Municipal Facilities</h3>
+                    <p>Design review and damage evaluation for pump stations, water towers, and pipeline-related structures.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Repair Recommendations</h3>
+                    <p>Defensible repair plans, sequencing, and scope documentation aligned with engineering standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Forensic Engineering Methodology</h2>
+                <p>A disciplined approach from records review to testimony-ready conclusions</p>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Scope &amp; Record Review</h3>
+                    <p>Collect plans, maintenance history, weather data, and incident records to define the technical baseline.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Site Inspection</h3>
+                    <p>Document structural conditions with measurements, photographs, and targeted testing as needed.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Engineering Analysis</h3>
+                    <p>Apply calculations and code standards to evaluate causation, extent of damage, and stability.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Reporting &amp; Testimony</h3>
+                    <p>Deliver clear reports, repair recommendations, and litigation support for deposition or trial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Types Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="case-types">
+                <h3>Representative Case Types</h3>
+                <ul class="case-list">
+                    <li><i class="fas fa-check"></i>Structural impacts from vehicles, trees, or equipment</li>
+                    <li><i class="fas fa-check"></i>Roofing and envelope damage from wind, hail, or construction defects</li>
+                    <li><i class="fas fa-check"></i>Foundation and slab movement from moisture, soil settlement, or blasting</li>
+                    <li><i class="fas fa-check"></i>Water intrusion, mold, and snow-load related failures</li>
+                    <li><i class="fas fa-check"></i>Retaining wall and slope stability failures</li>
+                    <li><i class="fas fa-check"></i>Flood and fire damage causation for walls, floors, and roofs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="expertise-cta">
+        <div class="container">
+            <h2>Need Structural Engineering Support?</h2>
+            <p>Engage a licensed forensic engineer to assess structural failures, storm losses, and repair scope.</p>
+            <div class="cta-buttons">
+                <a href="contact" class="cta-btn cta-btn-primary">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+                <a href="/#expertise" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-arrow-left"></i> View All Expertise Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Formidable Partners</h3>
+                        <p>Leading provider of economic and medical litigation consulting services.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="economic-financial-analysis">Securities Analysis</a></li>
+                            <li><a href="bankruptcy-restructuring">Bankruptcy Consulting</a></li>
+                            <li><a href="insurance">Insurance Coverage</a></li>
+                            <li><a href="epidemiology-cancer-research">Medical Expert Services</a></li>
+                            <li><a href="hematopathology">Hematopathology</a></li>
+                            <li><a href="pipeline-integrity">Pipeline Integrity</a></li>
+                            <li><a href="structural-engineering">Structural Engineering</a></li>
+                            <li><a href="neurology-consulting">Neurology &amp; Neurocritical Care</a></li>
+                            <li><a href="plastic-surgery">Plastic Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p><a href="mailto:wpowley@formidable.partners">wpowley@formidable.partners</a></p>
+                        <p><a href="tel:+16178194551">(617) 819-4551</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/formidable-partners" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Formidable Partners. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
